@@ -1,34 +1,74 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/trustyourinbox/environment-dineshmistry-dev
 cluster:
-  clusterName: "dineshmistry"
-  environmentGitOwner: "trustyourinbox"
-  project: "dinesh-mistry-playground"
+  clusterName: dineshmistry
+  environmentGitOwner: trustyourinbox
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: dinesh-mistry-playground
   provider: gke
-  zone: "us-east4-b"
-gitops: true
+  registry: gcr.io
+  zone: us-east4-b
 environments:
-- key: dev
-- key: staging
-- key: production
+- ingress:
+    domain: 35.245.39.207.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+gitops: true
 ingress:
-  domain: ""
+  domain: 35.245.39.207.nip.io
   externalDNS: false
+  namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: vault
 storage:
+  backup:
+    enabled: false
+    url: ""
   logs:
     enabled: true
-    url: ""
+    url: gs://dineshmistry-logs-866217e1-6638-4c53-ab44-d79961503aff
   reports:
     enabled: true
-    url: ""
+    url: gs://dineshmistry-reports-f746aca2-0b8e-46ba-8216-d844bb42e5
   repository:
     enabled: true
-    url: ""
+    url: gs://dineshmistry-repository-ff7fb5ee-ea36-4bf5-8a74-39de205
+vault: {}
+velero: {}
 versionStream:
-  ref: "master"
+  ref: v1.0.271
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
