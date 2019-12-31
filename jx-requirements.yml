@@ -69,6 +69,6 @@ storage:
 vault: {}
 velero: {}
 versionStream:
-  ref: v1.0.271
+  ref: f1aeb4fe982eeb28f6428fc10c4f1a032510c71f
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
