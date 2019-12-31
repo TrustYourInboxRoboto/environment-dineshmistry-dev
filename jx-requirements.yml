@@ -1,6 +1,6 @@
 cluster:
   clusterName: "trustyourinbox-development"
-  environmentGitOwner: "dmtrustyourinbox"
+  environmentGitOwner: "trustyourinbox"
   project: "trustyourinbox-development"
   provider: gke
   zone: "us-east4-a"
