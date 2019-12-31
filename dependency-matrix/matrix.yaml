@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: trustyourinbox
+  repo: jx-golang-quickstart-demo-app
+  url: https://github.com/trustyourinbox/jx-golang-quickstart-demo-app.git
+  version: ""
+  versionURL: ""

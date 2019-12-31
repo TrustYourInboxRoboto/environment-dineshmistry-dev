@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: trustyourinbox
+    provider: github
+    repository: jx-golang-quickstart-demo-app
+  name: trustyourinbox-jx-golang-quickstart-demo-app
+spec:
+  description: Imported application for trustyourinbox/jx-golang-quickstart-demo-app
+  httpCloneURL: https://github.com/trustyourinbox/jx-golang-quickstart-demo-app.git
+  org: trustyourinbox
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-golang-quickstart-demo-app
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/trustyourinbox/jx-golang-quickstart-demo-app.git
