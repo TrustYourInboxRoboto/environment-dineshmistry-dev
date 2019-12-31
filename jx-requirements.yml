@@ -1,9 +1,9 @@
 cluster:
-  clusterName: "trustyourinbox-development"
+  clusterName: "dineshmistry"
   environmentGitOwner: "trustyourinbox"
-  project: "trustyourinbox-development"
+  project: "dinesh-mistry-playground"
   provider: gke
-  zone: "us-east4-a"
+  zone: "us-east4-b"
 gitops: true
 environments:
 - key: dev
